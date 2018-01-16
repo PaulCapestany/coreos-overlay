@@ -85,11 +85,6 @@ RDEPEND="${RDEPEND}
 	)"
 
 RDEPEND="${RDEPEND}
-	app-admin/etcd-wrapper
-	app-admin/flannel-wrapper
-	app-admin/fleet
-	app-admin/kubelet-wrapper
-	app-admin/locksmith
 	app-admin/mayday
 	app-admin/sdnotify-proxy
 	app-admin/sudo
@@ -101,19 +96,11 @@ RDEPEND="${RDEPEND}
 	app-arch/zip
 	app-crypt/gnupg
 	app-crypt/tpmpolicy
-	app-editors/vim
-	app-emulation/rkt
-	app-emulation/actool
+	app-editors/neovim
 	app-misc/ca-certificates
 	app-misc/jq
 	app-shells/bash
-	coreos-base/coreos-cloudinit
 	coreos-base/coreos-init
-	coreos-base/coreos-metadata
-	coreos-base/update-ssh-keys
-	coreos-base/update_engine
-	dev-db/etcd:2
-	dev-db/etcdctl
 	dev-util/strace
 	dev-vcs/git
 	net-analyzer/nmap
@@ -170,4 +157,5 @@ RDEPEND="${RDEPEND}
 	sys-process/procps
 	x11-base/xorg-drivers
 	x11-base/xorg-server
+	x11-wm/i3
 	"
