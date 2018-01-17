@@ -117,6 +117,7 @@ RDEPEND="${RDEPEND}
 	sys-apps/coreutils
 	sys-apps/dbus
 	sys-apps/ethtool
+	sys-apps/file
 	sys-apps/findutils
 	sys-apps/gawk
 	sys-apps/grep
@@ -131,6 +132,7 @@ RDEPEND="${RDEPEND}
 	sys-apps/sed
 	sys-apps/seismograph
 	sys-apps/shadow
+	sys-apps/the_silver_searcher
 	sys-apps/usbutils
 	sys-apps/util-linux
 	sys-apps/which
