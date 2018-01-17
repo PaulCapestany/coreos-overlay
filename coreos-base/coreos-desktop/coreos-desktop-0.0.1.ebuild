@@ -118,14 +118,16 @@ RDEPEND="${RDEPEND}
 	net-fs/nfs-utils
 	net-misc/bridge-utils
 	net-misc/curl
-	net-misc/dhcpcd
+	net-misc/dhcp
 	net-misc/iputils
+	net-misc/networkmanager
 	net-misc/ntp
 	net-misc/openssh
 	net-misc/rsync
 	net-misc/socat
 	net-misc/wget
 	net-misc/whois
+	net-vpn/openvpn
 	sys-apps/coreutils
 	sys-apps/dbus
 	sys-apps/diffutils
@@ -171,6 +173,8 @@ RDEPEND="${RDEPEND}
 	sys-process/procps
 	x11-base/xorg-drivers
 	x11-base/xorg-server
+	x11-misc/i3lock
+	x11-misc/i3status
 	x11-misc/xclip
 	x11-misc/xcompmgr
 	x11-terms/rxvt-unicode
