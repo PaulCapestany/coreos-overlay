@@ -76,19 +76,13 @@ RDEPEND="${RDEPEND}
 # Only applicable or available on amd64
 RDEPEND="${RDEPEND}
 	amd64? (
-		app-admin/adcli
 		app-crypt/go-tspi
-		app-emulation/xenserver-pv-version
-		app-emulation/xenstore
-		sys-auth/realmd
-		sys-auth/sssd
 	)"
 
 RDEPEND="${RDEPEND}
 	app-admin/mayday
 	app-admin/sdnotify-proxy
 	app-admin/sudo
-	app-admin/toolbox
 	app-arch/gzip
 	app-arch/tar
 	app-arch/torcx
@@ -112,6 +106,7 @@ RDEPEND="${RDEPEND}
 	net-firewall/nftables
 	net-fs/nfs-utils
 	net-misc/bridge-utils
+	net-misc/curl
 	net-misc/dhcpcd
 	net-misc/iputils
 	net-misc/ntp
