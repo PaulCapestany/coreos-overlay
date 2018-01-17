@@ -97,6 +97,8 @@ RDEPEND="${RDEPEND}
 	app-misc/ca-certificates
 	app-misc/jq
 	app-shells/bash
+	app-shells/bash-completion
+	app-text/tree
 	coreos-base/coreos-init
 	dev-util/indent
 	dev-util/strace
