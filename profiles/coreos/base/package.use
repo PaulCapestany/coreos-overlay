@@ -111,6 +111,6 @@ media-libs/mesa xa
 
 x11-base/xorg-drivers input_devices_evdev input_devices_synaptics video_cards_intel video_cards_nouveau video_cards_nvidia video_cards_radeon video_cards_vmware video_cards_virtualbox
 
-x11-base/xorg-server glamor xorg !wayland
+x11-base/xorg-server glamor xorg
 
 x11-libs/libdrm libkms video_cards_nouveau video_cards_vmware video_cards_radeon
