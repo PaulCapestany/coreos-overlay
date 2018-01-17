@@ -83,18 +83,21 @@ RDEPEND="${RDEPEND}
 	app-admin/mayday
 	app-admin/sdnotify-proxy
 	app-admin/sudo
+	app-arch/bzip2
 	app-arch/gzip
 	app-arch/tar
 	app-arch/torcx
 	app-arch/unzip
 	app-arch/zip
 	app-crypt/gnupg
+	app-crypt/pinentry
 	app-crypt/tpmpolicy
 	app-editors/neovim
 	app-misc/ca-certificates
 	app-misc/jq
 	app-shells/bash
 	coreos-base/coreos-init
+	dev-util/indent
 	dev-util/strace
 	dev-vcs/git
 	net-analyzer/nmap
@@ -155,5 +158,6 @@ RDEPEND="${RDEPEND}
 	sys-process/procps
 	x11-base/xorg-drivers
 	x11-base/xorg-server
+	x11-terms/rxvt-unicode
 	x11-wm/i3
 	"
