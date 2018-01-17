@@ -113,12 +113,14 @@ RDEPEND="${RDEPEND}
 	net-misc/dhcpcd
 	net-misc/iputils
 	net-misc/ntp
+	net-misc/openssh
 	net-misc/rsync
 	net-misc/socat
 	net-misc/wget
 	net-misc/whois
 	sys-apps/coreutils
 	sys-apps/dbus
+	sys-apps/diffutils
 	sys-apps/ethtool
 	sys-apps/file
 	sys-apps/findutils
@@ -142,6 +144,9 @@ RDEPEND="${RDEPEND}
 	sys-block/open-iscsi
 	sys-cluster/ipvsadm
 	sys-devel/bc
+	sys-devel/gcc
+	sys-devel/make
+	sys-devel/patch
 	sys-fs/btrfs-progs
 	sys-fs/dosfstools
 	sys-fs/e2fsprogs
