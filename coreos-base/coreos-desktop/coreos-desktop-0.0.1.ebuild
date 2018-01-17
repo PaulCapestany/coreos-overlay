@@ -88,6 +88,7 @@ RDEPEND="${RDEPEND}
 	app-arch/tar
 	app-arch/torcx
 	app-arch/unzip
+	app-arch/xz-utils
 	app-arch/zip
 	app-crypt/gnupg
 	app-crypt/pinentry
@@ -163,6 +164,8 @@ RDEPEND="${RDEPEND}
 	sys-process/procps
 	x11-base/xorg-drivers
 	x11-base/xorg-server
+	x11-misc/xclip
+	x11-misc/xcompmgr
 	x11-terms/rxvt-unicode
 	x11-wm/i3
 	"
