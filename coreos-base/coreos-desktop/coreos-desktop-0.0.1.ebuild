@@ -9,7 +9,7 @@ HOMEPAGE="http://coreos.com"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="selinux"
+IUSE="selinux apparmor"
 
 
 ################################################################################
@@ -71,6 +71,10 @@ RDEPEND="${RDEPEND}
 	sys-apps/systemd[selinux?]
 	selinux? (
 		sec-policy/selinux-virt
+	)
+	apparmor? (
+		sec-policy/apparmor-profiles
+		sys-apps/apparmor
 	)"
 
 # Only applicable or available on amd64
@@ -103,6 +107,7 @@ RDEPEND="${RDEPEND}
 	dev-util/indent
 	dev-util/strace
 	dev-vcs/git
+	media-sound/alsa-utils
 	net-analyzer/nmap
 	net-analyzer/tcpdump
 	net-dns/bind-tools
