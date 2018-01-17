@@ -107,6 +107,8 @@ RDEPEND="${RDEPEND}
 	dev-util/indent
 	dev-util/strace
 	dev-vcs/git
+	media-gfx/feh
+	media-gfx/scrot
 	media-sound/alsa-utils
 	net-analyzer/nmap
 	net-analyzer/tcpdump
@@ -173,6 +175,7 @@ RDEPEND="${RDEPEND}
 	sys-process/procps
 	x11-base/xorg-drivers
 	x11-base/xorg-server
+	x11-misc/dmenu
 	x11-misc/i3lock
 	x11-misc/i3status
 	x11-misc/xclip
