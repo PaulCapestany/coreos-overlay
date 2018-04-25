@@ -3,13 +3,13 @@
 
 EAPI=2
 
-DESCRIPTION="CoreOS (meta package)"
+DESCRIPTION="CoreOS Desktop (meta package)"
 HOMEPAGE="http://coreos.com"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="selinux"
+IUSE="selinux apparmor"
 
 
 ################################################################################
@@ -71,51 +71,45 @@ RDEPEND="${RDEPEND}
 	sys-apps/systemd[selinux?]
 	selinux? (
 		sec-policy/selinux-virt
+	)
+	apparmor? (
+		sec-policy/apparmor-profiles
+		sys-apps/apparmor
 	)"
 
 # Only applicable or available on amd64
 RDEPEND="${RDEPEND}
 	amd64? (
-		app-admin/adcli
 		app-crypt/go-tspi
-		app-emulation/xenserver-pv-version
-		app-emulation/xenstore
-		sys-auth/realmd
-		sys-auth/sssd
 	)"
 
 RDEPEND="${RDEPEND}
-	app-admin/etcd-wrapper
-	app-admin/flannel-wrapper
-	app-admin/fleet
-	app-admin/kubelet-wrapper
-	app-admin/locksmith
 	app-admin/mayday
 	app-admin/sdnotify-proxy
 	app-admin/sudo
-	app-admin/toolbox
+	app-arch/bzip2
 	app-arch/gzip
 	app-arch/tar
 	app-arch/torcx
 	app-arch/unzip
+	app-arch/xz-utils
 	app-arch/zip
 	app-crypt/gnupg
+	app-crypt/pinentry
 	app-crypt/tpmpolicy
-	app-editors/vim
-	app-emulation/rkt
-	app-emulation/actool
+	app-editors/neovim
 	app-misc/ca-certificates
 	app-misc/jq
 	app-shells/bash
-	coreos-base/coreos-cloudinit
+	app-shells/bash-completion
+	app-text/tree
 	coreos-base/coreos-init
-	coreos-base/coreos-metadata
-	coreos-base/update-ssh-keys
-	coreos-base/update_engine
-	dev-db/etcd:2
-	dev-db/etcdctl
+	dev-util/indent
 	dev-util/strace
 	dev-vcs/git
+	media-gfx/feh
+	media-gfx/scrot
+	media-sound/alsa-utils
 	net-analyzer/nmap
 	net-analyzer/tcpdump
 	net-dns/bind-tools
@@ -125,16 +119,22 @@ RDEPEND="${RDEPEND}
 	net-firewall/nftables
 	net-fs/nfs-utils
 	net-misc/bridge-utils
-	net-misc/dhcpcd
+	net-misc/curl
+	net-misc/dhcp
 	net-misc/iputils
+	net-misc/networkmanager
 	net-misc/ntp
+	net-misc/openssh
 	net-misc/rsync
 	net-misc/socat
 	net-misc/wget
 	net-misc/whois
+	net-vpn/openvpn
 	sys-apps/coreutils
 	sys-apps/dbus
+	sys-apps/diffutils
 	sys-apps/ethtool
+	sys-apps/file
 	sys-apps/findutils
 	sys-apps/gawk
 	sys-apps/grep
@@ -149,11 +149,16 @@ RDEPEND="${RDEPEND}
 	sys-apps/sed
 	sys-apps/seismograph
 	sys-apps/shadow
+	sys-apps/the_silver_searcher
 	sys-apps/usbutils
 	sys-apps/util-linux
 	sys-apps/which
 	sys-block/open-iscsi
 	sys-cluster/ipvsadm
+	sys-devel/bc
+	sys-devel/gcc
+	sys-devel/make
+	sys-devel/patch
 	sys-fs/btrfs-progs
 	sys-fs/dosfstools
 	sys-fs/e2fsprogs
@@ -168,4 +173,13 @@ RDEPEND="${RDEPEND}
 	sys-libs/timezone-data
 	sys-process/lsof
 	sys-process/procps
+	x11-base/xorg-drivers
+	x11-base/xorg-server
+	x11-misc/dmenu
+	x11-misc/i3lock
+	x11-misc/i3status
+	x11-misc/xclip
+	x11-misc/xcompmgr
+	x11-terms/rxvt-unicode
+	x11-wm/i3
 	"
